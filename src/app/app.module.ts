@@ -10,13 +10,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { HomeComponent } from './home/home.component';
+import { EssayComponent } from './essay/essay.component';
+import { TagComponent } from './tag/tag.component';
+import { HeadComponent } from './head/head.component';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    EssayComponent,
+    TagComponent,
+    HeadComponent
   ],
   imports: [
     BrowserModule,

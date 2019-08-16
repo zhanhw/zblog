@@ -1,0 +1,111 @@
+<app-head></app-head>
+<div style="background-color: #eaeaea">
+    <div style="height: 20px">
+    </div>
+    <div nz-row>
+        <div nz-col nzSpan="5">
+        </div>
+        <div nz-col nzSpan="14">
+            <nz-card [nzTitle]="titleTag">
+                <h2 nz-title class="title-main"> Elasticsearch面试题</h2>
+                <div class="blockquote">
+                    总结一些ES相关的面试题，既是对日常工作所学知识的回顾与梳理，也可以查漏补缺。
+                    题目来自于网络，只整理一些我个人觉得还不错的，有些答案是我根据自己的理解给出的，仅供参考。
+                    既然是面试题，每个人都会有自己的结合业务场景的答案，没有100分的标准的答案。
+                    如果有不同的理解，欢迎大家在评论区留言指正，感谢大家！
+                </div>
+                <nz-card nzType="inner" class="margin-top-ml" [nzTitle]="innerTitle1">
+                    <p nz-paragraph nzCopyable="true" nzContent="Elasticsearch是一个基于Lucene的搜索引擎。它提供了具有HTTP
+                    Web界面和无架构JSON文档的分布式，多租户能力的全文搜索引擎。Elasticsearch是用Java开发的，根据Apache许可条款作为开源发布。"></p>
+                </nz-card>
+                <nz-card nzType="inner" class="margin-top-ml" [nzTitle]="innerTitle2">
+                    <p nz-paragraph nzCopyable="true" nzContent="传统的检索方式是通过文章，逐个遍历找到对应关键词的位置。
+                    　　倒排索引，是通过分词策略，形成了词和文章的映射关系表，也称倒排表，这种词典+映射表即为倒排索引。
+                    　　其中词典中存储词元，倒排表中存储该词元在哪些文中出现的位置。
+                    　　有了倒排索引，就能实现O(1)时间复杂度的效率检索文章了，极大的提高了检索效率。
+                    　　加分项：
+                    　　倒排索引的底层实现是基于：FST（Finite State Transducer）数据结构。
+                    　　Lucene从4+版本后开始大量使用的数据结构是FST。FST有两个优点：
+                    　　1）空间占用小。通过对词典中单词前缀和后缀的重复利用，压缩了存储空间；
+                    　　2）查询速度快。O(len(str))的查询时间复杂度。"></p>
+                </nz-card>
+                <nz-card nzType="inner" class="margin-top-ml" [nzTitle]="innerTitle3">
+                    <p nz-paragraph nzCopyable="true" nzContent="传统的检索方式是通过文章，逐个遍历找到对应关键词的位置。
+                    　　倒排索引，是通过分词策略，形成了词和文章的映射关系表，也称倒排表，这种词典+映射表即为倒排索引。
+                    　　其中词典中存储词元，倒排表中存储该词元在哪些文中出现的位置。
+                    　　有了倒排索引，就能实现O(1)时间复杂度的效率检索文章了，极大的提高了检索效率。
+                    　　加分项：
+                    　　倒排索引的底层实现是基于：FST（Finite State Transducer）数据结构。
+                    　　Lucene从4+版本后开始大量使用的数据结构是FST。FST有两个优点：
+                    　　1）空间占用小。通过对词典中单词前缀和后缀的重复利用，压缩了存储空间；
+                    　　2）查询速度快。O(len(str))的查询时间复杂度。"></p>
+                </nz-card>
+                <hr class="margin-top-ml">
+                <div class="text-right">
+                    <span>分享 : &nbsp;</span>
+                    <span class="margin-left-sm">
+                        <a target="_blank"
+                            href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fwww.wenyuanblog.com%2Fblogs%2Felasticsearch-interview-questions.html&title=Elasticsearch%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB%20-%20%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2_%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0_%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%BF%9B%E9%98%B6%E4%B9%8B%E8%B7%AF_%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%97%A5%E5%B8%B8&pic=https%3A%2F%2Fwww.wenyuanblog.com%2Fmedias%2Flogo.png&appkey=">
+                            <i nz-icon nzType="weibo-circle" nzTheme="outline"></i>
+                        </a>
+                    </span>
+                    <span class="margin-left-sm">
+                        <a target="_blank"
+                            href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fwww.wenyuanblog.com%2Fblogs%2Felasticsearch-interview-questions.html&title=Elasticsearch%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB%20-%20%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2_%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0_%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%BF%9B%E9%98%B6%E4%B9%8B%E8%B7%AF_%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%97%A5%E5%B8%B8&pic=https%3A%2F%2Fwww.wenyuanblog.com%2Fmedias%2Flogo.png&appkey=">
+                            <i nz-icon nzType="qq" nzTheme="outline"></i>
+                        </a>
+                    </span>
+                    <span class="margin-left-sm">
+                        <a target="_blank"
+                            href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fwww.wenyuanblog.com%2Fblogs%2Felasticsearch-interview-questions.html&title=Elasticsearch%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB%20-%20%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2_%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0_%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%BF%9B%E9%98%B6%E4%B9%8B%E8%B7%AF_%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%97%A5%E5%B8%B8&pic=https%3A%2F%2Fwww.wenyuanblog.com%2Fmedias%2Flogo.png&appkey=">
+                            <i nz-icon nzType="wechat" nzTheme="outline"></i>
+                        </a>
+                    </span>
+                    <span class="margin-left-sm">
+                        <a target="_blank"
+                            href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fwww.wenyuanblog.com%2Fblogs%2Felasticsearch-interview-questions.html&title=Elasticsearch%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB%20-%20%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2_%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0_%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%BF%9B%E9%98%B6%E4%B9%8B%E8%B7%AF_%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%97%A5%E5%B8%B8&pic=https%3A%2F%2Fwww.wenyuanblog.com%2Fmedias%2Flogo.png&appkey=">
+                            <i nz-icon nzType="zhihu" nzTheme="outline"></i>
+                        </a>
+                    </span>
+                </div>
+            </nz-card>
+            <ng-template #titleTag>
+                <div class="margin-left-ms">
+                    <div class="margin-top-sl pull-left">
+                        <nz-tag [nzColor]="'#108ee9'">web开发</nz-tag>
+                        <nz-tag [nzColor]="'#108ee9'">vue.js</nz-tag>
+                    </div>
+                    <div class="margin-top-sl pull-right">
+                        <i nz-icon nzType="book" nzTheme="outline"></i>
+                        <span class="margin-left-s">前端技术</span>
+                    </div>
+                </div>
+                <div nz-col nzSpan="24" class="margin-top-ms pull-right">
+                    <span class="margin-left-sm">
+                        <i nz-icon nzType="calendar" nzTheme="outline"></i>
+                        <span class="margin-left-s">发布日期: 2018-03-09</span>
+                    </span>
+                    <span class="margin-left-sm">
+                        <i nz-icon nzType="calendar" nzTheme="outline"></i>
+                        <span class="margin-left-s">最近更新: 2019-03-09</span>
+                    </span>
+                    <span class="margin-left-sm">
+                        <i nz-icon nzType="eye" nzTheme="outline"></i>
+                        <span class="margin-left-s">阅读次数: 30</span>
+                    </span>
+                </div>
+            </ng-template>
+            <ng-template #innerTitle1>
+                <h4 nz-title>1. 什么是Elasticsearch？</h4>
+            </ng-template>
+            <ng-template #innerTitle2>
+                <h4 nz-title>2. ES中的倒排索引是什么？</h4>
+            </ng-template>
+            <ng-template #innerTitle3>
+                <h4 nz-title> 3. ES是如何实现master选举的？</h4>
+            </ng-template>
+        </div>
+        <div nz-col nzSpan="5">
+        </div>
+    </div>
+</div>
