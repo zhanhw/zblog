@@ -13,6 +13,8 @@ import { HomeComponent } from './home/home.component';
 import { EssayComponent } from './essay/essay.component';
 import { TagComponent } from './tag/tag.component';
 import { HeadComponent } from './head/head.component';
+import { ClassificationComponent } from './classification/classification.component';
+import { AboutComponent } from './about/about.component';
 
 registerLocaleData(en);
 
@@ -22,7 +24,9 @@ registerLocaleData(en);
     HomeComponent,
     EssayComponent,
     TagComponent,
-    HeadComponent
+    HeadComponent,
+    ClassificationComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -26,4 +26,12 @@ export class HeadComponent implements OnInit {
     this.router.navigate(['/app-tag']);
   }
 
+  goClassification = () => {
+    this.router.navigate(['/app-classification']);
+  }
+  
+  goAboutMe = () => {
+    this.router.navigate(['/app-about']);
+  }
+
 }
